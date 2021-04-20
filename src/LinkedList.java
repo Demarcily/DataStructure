@@ -21,7 +21,12 @@ public class LinkedList {
      * @param newNode
      */
     public void addLast(Node newNode) {
-
+        if (first == null) {
+            first = newNode;
+        }
+        else {
+            first.next = newNode;
+        }
     }
 
     /**
